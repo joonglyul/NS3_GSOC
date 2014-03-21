@@ -1,0 +1,46 @@
+29,33c29,41
+< /*
+<  *
+<  * XXX: IMPLEMENT TWO METHODS HERE
+<  * 
+<  * */
+---
+> void
+> TestApplication::StartApplication()
+> {
+>   	NS_LOG_FUNCTION (this);
+> 	NS_LOG_UNCOND ("Hello World!!");
+> }
+> 
+> void
+> TestApplication::StopApplication()
+> {
+>   	NS_LOG_FUNCTION (this);
+> 	NS_LOG_UNCOND ("Goodbye World!!");
+> }
+--- testapp.cc	2014-03-21 14:01:42.000000000 -0500
++++ testapp.cc_change	2013-05-04 12:33:29.000000000 -0500
+@@ -26,10 +26,18 @@
+   NS_LOG_FUNCTION (this);
+ }
+ 
+-/*
+- *
+- * XXX: IMPLEMENT TWO METHODS HERE
+- * 
+- * */
++void
++TestApplication::StartApplication()
++{
++  	NS_LOG_FUNCTION (this);
++	NS_LOG_UNCOND ("Hello World!!");
++}
++
++void
++TestApplication::StopApplication()
++{
++  	NS_LOG_FUNCTION (this);
++	NS_LOG_UNCOND ("Goodbye World!!");
++}
+ 
+ } // namespace ns3
