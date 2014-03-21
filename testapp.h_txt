@@ -1,0 +1,35 @@
+4a5
+> #include "ns3/ptr.h"
+18,22c19,20
+< /*
+<  * XXX: ADD TWO METHODS HERE
+<  *
+<  * 
+<  */
+---
+>   void StartApplication(void);
+>   void StopApplication(void);
+--- testapp.h	2014-03-21 14:01:42.000000000 -0500
++++ testapp.h_change	2014-03-21 12:02:45.000000000 -0500
+@@ -2,6 +2,7 @@
+ #define TEST_APPLICATION_H
+ 
+ #include "ns3/application.h"
++#include "ns3/ptr.h"
+ 
+ namespace ns3 {
+ 
+@@ -15,11 +16,8 @@
+   virtual ~TestApplication ();
+ 
+ private:
+-/*
+- * XXX: ADD TWO METHODS HERE
+- *
+- * 
+- */
++  void StartApplication(void);
++  void StopApplication(void);
+ };
+ 
+ }
